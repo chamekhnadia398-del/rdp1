@@ -1,4 +1,3 @@
-Aymen Lachin, [25/12/2025 16:38]
 name: RDP
 on:
   workflow_dispatch:
@@ -74,9 +73,7 @@ jobs:
               Write-Error "Tailscale IP not assigned. Exiting."
               exit 1
           }
-
-Aymen Lachin, [25/12/2025 16:38]
-echo "TAILSCALE_IP=$tsIP" >> $env:GITHUB_ENV
+          echo "TAILSCALE_IP=$tsIP" >> $env:GITHUB_ENV
 
       - name: Verify RDP Accessibility
         run: |
